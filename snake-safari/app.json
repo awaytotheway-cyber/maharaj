@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Snake Safari",
+    "slug": "snake-safari",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#071430",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.pratik.snakesafari"
+    },
+    "android": {
+      "package": "com.pratik.snakesafari",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#0B1E3F",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.VIBRATE"
+      ],
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "recordAudioAndroid": false,
+          "enableBackgroundPlayback": false
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 240,
+          "resizeMode": "contain",
+          "backgroundColor": "#0B1E3F"
+        }
+      ],
+      "expo-asset"
+    ]
+  }
+}
